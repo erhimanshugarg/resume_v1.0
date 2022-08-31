@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  --main-border-color: #17a2b8;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif !important;
+  box-sizing: border-box;
+  /* border: 6px solid var(--main-border-color); */
+}
+
+.profile-image {
+  background: url(./profile.jpg) no-repeat;
+  display: inline-block;
+  height: 135px;
+  width: 120px;
+  background-size: cover;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.title {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+#contact-details {
+  background-color: #f4f6f6;
+  padding: 10px;
+}
+
+.info {
+  display: inline-block;
+  padding: 5px;
+}
+
+.fa-brands,
+.fa-globe-asia,
+.fa-solid {
+  padding: 4px;
+  color: #00467f; /* fallback for old browsers */
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.signature > span {
+  font-size: 0.8rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #00467f; /* fallback for old browsers */
+}
+
+.badge {
+  padding: 5px;
+  text-transform: uppercase;
+  background: #00467f; /* fallback for old browsers */
+}
+
+.main-skills > span {
+  margin: 5px;
+}
+
+.education_details > .institute {
+  line-height: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+  opacity: 0.5;
+}
+
+.work_details > span {
+  opacity: 0.5;
+  line-height: 5px;
+  font-size: 12px;
+}
+
+ul > li {
+  list-style-type: disclosure-closed;
+  font-size: 13px;
+  color: rgb(27 26 26 / 73%);
+}
+
+.company-details > h6 {
+  margin-bottom: 0;
+}
+
+.designation {
+  opacity: 0.8;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.duration {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+/**
+Media Queries
+**/
+@media (max-width: 767px) {
+  .profile-pic {
+    text-align: center;
+  }
+
+  #work-experience {
+    margin-top: 0.5rem;
+  }
+  .introduction {
+    text-align: center;
+  }
+
+  .organizations {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .profile-pic {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
