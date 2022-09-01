@@ -32,7 +32,14 @@ a {
 
 #contact-details {
   background-color: #f4f6f6;
-  padding: 10px;
+  position: relative;
+  height: 100px;
+}
+
+.contact-details {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .info {
@@ -87,7 +94,7 @@ h4 {
 ul > li {
   list-style-type: disclosure-closed;
   font-size: 13px;
-  color: rgb(27 26 26 / 73%);
+  color: rgba(17, 1, 1, 0.86);
 }
 
 .company-details > h6 {
@@ -95,7 +102,6 @@ ul > li {
 }
 
 .designation {
-  opacity: 0.8;
   font-size: 14px;
   margin-left: 10px;
 }
@@ -108,6 +114,11 @@ ul > li {
 /**
 Media Queries
 **/
+@media (max-width: 450px) {
+  #contact-details {
+    height: 200px;
+  }
+}
 @media (max-width: 767px) {
   .profile-pic {
     text-align: center;
@@ -129,5 +140,11 @@ Media Queries
   .profile-pic {
     text-align: center;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 991px) {
+  #contact-details {
+    height: 50px;
   }
 }
